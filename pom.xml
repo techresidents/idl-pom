@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.techresidents.lib.java</groupId>
+        <artifactId>parent-pom</artifactId>
+        <version>0.2.0</version>
+    </parent>
+
+    <groupId>com.techresidents.services.core.idl</groupId>
+    <artifactId>idl-pom</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>IDL Parent Pom</name>
+    <description>IDL dependent things should use this pom.</description>
+    <inceptionYear>2012</inceptionYear>
+    <organization>
+        <name>Tech Residents</name>
+        <url>http://techresidents.com</url>
+    </organization>
+
+    <properties>
+        <!-- Internal -->
+        <idlCoreVersion>0.4.0</idlCoreVersion>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- Internal dependencies -->
+            <dependency>
+                <groupId>com.techresidents.services.core.idl</groupId>
+                <artifactId>idl-core</artifactId>
+                <version>${idlCoreVersion}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techresidents.services.core.idl</groupId>
+                <artifactId>idl-core-idl</artifactId>
+                <version>${idlCoreVersion}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techresidents.services.core.idl</groupId>
+                <artifactId>idl-core-java</artifactId>
+                <version>${idlCoreVersion}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techresidents.services.core.idl</groupId>
+                <artifactId>idl-core-python</artifactId>
+                <version>${idlCoreVersion}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>
