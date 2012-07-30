@@ -23,7 +23,7 @@
 
     <properties>
         <!-- Internal -->
-        <idlCoreVersion>0.6.0</idlCoreVersion>
+        <idlCoreVersion>0.7.0</idlCoreVersion>
     </properties>
 
     <dependencyManagement>
